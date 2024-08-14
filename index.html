@@ -1,14 +1,43 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-    <p>This is a simple display tag</p>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
-</html>
+import React from 'react';
+import Navbar from './Navbar';
+import HeadingWithButton from './HeadingWithButton';
+import Card from './Card';
+import Slider from './Slider';
+import Footer from './Footer';
+
+function App() {
+  return (
+    <div className="container">
+      <Navbar />
+      <h1>Hi there!!!</h1>
+      <HeadingWithButton title="Our Cards-1" buttonText="See More" />
+      <div className="cards-container">
+        <Card imageSrc="https://via.placeholder.com/150" title="Card 1" />
+        <Card imageSrc="https://via.placeholder.com/150" title="Card 2" />
+        <Card imageSrc="https://via.placeholder.com/150" title="Card 3" />
+        <Card imageSrc="https://via.placeholder.com/150" title="Card 4" />
+        <Card imageSrc="https://via.placeholder.com/150" title="Card 5" />
+      </div>
+      <Slider />
+      <HeadingWithButton title="Our Cards-2" buttonText="See More" />
+      <div className="cards-container">
+        <Card imageSrc="https://via.placeholder.com/150" title="Card 1" />
+        <Card imageSrc="https://via.placeholder.com/150" title="Card 2" />
+        <Card imageSrc="https://via.placeholder.com/150" title="Card 3" />
+        <Card imageSrc="https://via.placeholder.com/150" title="Card 4" />
+        <Card imageSrc="https://via.placeholder.com/150" title="Card 5" />
+      </div>
+      <HeadingWithButton title="Our Cards-3" buttonText="See More" />
+      <div className="cards-container">
+        <Card imageSrc="https://via.placeholder.com/150" title="Card 1" />
+        <Card imageSrc="https://via.placeholder.com/150" title="Card 2" />
+        <Card imageSrc="https://via.placeholder.com/150" title="Card 3" />
+        <Card imageSrc="https://via.placeholder.com/150" title="Card 4" />
+        <Card imageSrc="https://via.placeholder.com/150" title="Card 5" />
+      </div>
+      <Footer />
+    </div>
+  );
+}
+
+export default App;
